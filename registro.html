@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="login-box">
+        <h2>Registro</h2>
+        <form action="procesar_registro.php" method="POST">
+            <div class="user-box">
+                <input type="text" name="nuevo_usuario" required="">
+                <label>Nombre de Usuario</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="nueva_password" required="">
+                <label>Contraseña</label>
+            </div>
+            <button type="submit" class="btn-submit">Registrarme</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

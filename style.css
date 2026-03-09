@@ -1,0 +1,81 @@
+/* --- Estilos Generales --- */
+* {
+    box-sizing: border-box; /* Fundamental para que el padding no rompa el ancho */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px; /* Se ajusta pero nunca supera los 400px */
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin: 20px; /* Margen de seguridad para móviles */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Campos de Entrada --- */
+.user-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px; /* Evita el zoom automático en iOS al hacer clic */
+    transition: border-color 0.3s;
+}
+
+.user-box input:focus {
+    border-color: #007bff;
+}
+
+/* --- Botón --- */
+.btn-submit {
+    background: #007bff;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #0056b3;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 1.5rem;
+        box-shadow: none; /* En móviles muy pequeños, menos sombras para un look más limpio */
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
